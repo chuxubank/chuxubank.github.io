@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Misaka
 subtitle:
-description:
-author: John Doe
-language:
+description: Nothing is true, everything is permitted.
+author: chuxubank
+language: zh-Hans
 timezone:
 
 # URL
@@ -16,6 +16,13 @@ url: http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+
+# Search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
 
 # Directory
 source_dir: source
