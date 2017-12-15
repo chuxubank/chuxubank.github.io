@@ -76,6 +76,7 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy: git
-  type: https://github.com/chuxubank/chuxubank.github.io.git
+deploy: 
+  type: git
+  repo: https://github.com/chuxubank/chuxubank.github.io.git
   branch: master
