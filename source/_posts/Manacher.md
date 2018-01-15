@@ -1,6 +1,11 @@
 ---
 title: Manacher法
-tags: Algorithm
+date: 2017-12-15
+categories:
+- Algorithm
+- String
+tags: 
+- Algorithm
 ---
 
 # 算法介绍
