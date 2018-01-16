@@ -14,7 +14,7 @@ tags:
 | :------: | :----------: |
 | S        | T            |
 | aaaba    | #a#a#a#b#a#  |
-
+<!-- more -->
 > &emsp;Manacher算法用一个辅助数组Len[i]表示以字符T[i]为中心的最长回文字串的最右字符到T[i]的长度，比如以T[i]为中心的最长回文字串是T[l,r],那么Len[i]=r-i+1。
 
 ![image](http://img.blog.csdn.net/20141221160159348)
