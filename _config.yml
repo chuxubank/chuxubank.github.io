@@ -77,7 +77,7 @@ symbols_count_time:
   symbols: true
   time: true
   total_symbols: true
-  total_time: true
+  total_time: false
 
 # Pagination
 ## Set per_page to 0 to disable pagination
