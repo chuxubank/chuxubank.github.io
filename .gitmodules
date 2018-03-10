@@ -1,6 +1,3 @@
 [submodule "themes/next"]
 	path = themes/next
-	url = https://github.com/chuxubank/hexo-theme-next.git
-[submodule "themes/next-reloaded"]
-	path = themes/next-reloaded
-	url = https://github.com/chuxubank/hexo-theme-next-reloaded.git
+	url = https://chuxubank@github.com/chuxubank/hexo-theme-next.git
