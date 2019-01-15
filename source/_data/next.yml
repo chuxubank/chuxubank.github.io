@@ -248,7 +248,7 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: hide
+  display: post
   #display: always
   #display: hide
   #display: remove
@@ -303,9 +303,9 @@ post_meta:
 symbols_count_time:
   separated_meta: true
   item_text_post: true
-  item_text_total: true
-  awl: 25
-  wpm: 10
+  item_text_total: false
+  awl: 4
+  wpm: 275
 
 codeblock:
   # Manual define the border radius in codeblock
