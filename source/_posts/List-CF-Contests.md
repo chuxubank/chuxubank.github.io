@@ -1,11 +1,11 @@
 ---
 title: List CF Contests
 date: 2018-01-15 14:55:30
-categories:
-- Shortcuts
 tags: 
-- Codeforces
-- Shortcuts
+  - Codeforces
+  - Shortcuts
+categories:
+  - Shortcuts
 ---
 
 # 简介

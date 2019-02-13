@@ -1,11 +1,11 @@
 ---
-title: Manacher法
+title: Manacher
 date: 2017-12-15
 categories:
-- Algorithm
-- String
+  - Algorithm
+  - String
 tags: 
-- Algorithm
+  - Algorithm
 ---
 
 # 算法介绍
@@ -26,25 +26,25 @@ Len数组有一个性质，那就是 Len[i]-1 就是该回文子串在原字符�
 LeetCode - 5 Longest Palindromic Substring
 
 string longestPalindrome(string s) {
-        string t = "$#";
-        for (int i = 0; i < s.size(); ++i) {
-            t += s[i];
-            t += '#';
-        }
-        int p[t.size()] = {0}, id = 0, mx = 0, resId, resMx = 0;
-        for (int i = 0; i < t.size(); ++i) {
-            p[i] = mx > i ? min(p[2 * id - i], mx - i) : 1;
-            //cout << i - p[i] << endl;
-            while (i - p[i] > 0 && t[i + p[i]] == t[i - p[i]]) ++p[i];
-            if (mx < i + p[i]) {
-                mx = i + p[i];
-                id = i;
-            }
-            if (resMx < p[i]) {
-                resMx = p[i];
-                resId = i;
-            }
-        }
-        return s.substr((resId - resMx) / 2, resMx - 1);
-    }
+	string t = "$#";
+	for (int i = 0; i < s.size(); ++i) {
+		t += s[i];
+		t += '#';
+	}
+	int p[t.size()] = {0}, id = 0, mx = 0, resId, resMx = 0;
+	for (int i = 0; i < t.size(); ++i) {
+		p[i] = mx > i ? min(p[2 * id - i], mx - i) : 1;
+		//cout << i - p[i] << endl;
+		while (i - p[i] > 0 && t[i + p[i]] == t[i - p[i]]) ++p[i];
+		if (mx < i + p[i]) {
+			mx = i + p[i];
+			id = i;
+		}
+		if (resMx < p[i]) {
+			resMx = p[i];
+			resId = i;
+		}
+	}
+	return s.substr((resId - resMx) / 2, resMx - 1);
+}
 ```
