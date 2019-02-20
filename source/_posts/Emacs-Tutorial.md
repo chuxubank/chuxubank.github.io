@@ -19,7 +19,7 @@ toc: true
 
 ## Summary
 	C-x C-c	End the Emacs session
-	C-g	Quit a partially entered command
+	C-g		Quit a partially entered command
 	C-x k  	Kill buffer
 
 	C-v	Move forward one screenful
@@ -61,16 +61,16 @@ These commands are two, three or four characters long.
 `electric`: when you start typing on the newly created line, the text lines up with that on the previous line.
 
 	<DEL>	Delete the character just before the cursor
-	C-d	Delete the next character after the cursor
+	C-d	  Delete the next character after the cursor
 
 	M-<DEL>	Kill the word immediately before the cursor
-	M-d	Kill the next word after the cursor
+	M-d		Kill the next word after the cursor
 
 	C-k	Kill from the cursor position to end of line
 	M-k	Kill to the end of the current sentence
 	
 	C-<SPC>	Set mark
-	C-w	Kill all the text between two mark positions.
+	C-w		Kill all the text between two mark positions.
 
 	C-y	Yank the killed text.
 	M-y	Replaces that yanked text with the previous kill.
@@ -80,8 +80,8 @@ Reinsertion of killed text is called "yanking". (Think of it as yanking back, or
 Generally, the commands that can remove a lot of text kill the text (they are set up so that you can yank the text), while the commands that remove just one character, or only remove blank lines and spaces, do deletion (so you cannot yank that text). `<DEL>` and `C-d` do deletion in the simplest case, with no argument. When given an argument, they kill instead.
 
 ## Undo
-	C-/	Undo
-	C-_	Undo
+	C-/	  Undo
+	C-_	  Undo
 	C-x u	Undo
 
 ## Files
@@ -90,8 +90,8 @@ Generally, the commands that can remove a lot of text kill the text (they are se
 
 ## Buffers
 	C-x C-b	List buffers
-	C-x b	Go to a buffer
-	C-x s	Save some buffers
+	C-x b	  Go to a buffer
+	C-x s	  Save some buffers
 
 ## Extending the command set
 	C-x	Character eXtend. Followed by one character.
@@ -103,10 +103,12 @@ Generally, the commands that can remove a lot of text kill the text (they are se
 
 ## Mode line
 	M-x text-mode	A major mode for editing human-language text
+	
 	C-h m	View documentation on your current major mode
+	
 	M-x auto-fill-mode	Breaks the line
-	C-x f	Set the margin
-	M-q	Re-fill the paragraph
+	C-x f				 Set the margin
+	M-q				   Re-fill the paragraph
 
 ## Searching
 	C-s	Forward search
