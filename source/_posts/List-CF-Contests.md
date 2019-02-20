@@ -6,6 +6,7 @@ tags:
   - Shortcuts
 categories:
   - Shortcuts
+toc: true
 ---
 
 # 简介
