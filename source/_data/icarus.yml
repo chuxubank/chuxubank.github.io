@@ -29,8 +29,8 @@ navbar:
         Categories: /categories
         Tags: /tags
         About: /about
-        Learning-AI: /Learning-AI
-        Learning-iOS: /Learning-iOS
+        Learning AI: /Learning-AI
+        Learning iOS: /Learning-iOS
     # Navigation bar links to be shown on the right
     # links:
     #     Download on GitHub:
