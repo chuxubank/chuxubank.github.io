@@ -2,12 +2,12 @@
 title: Greast Common Divisor
 date: 2019-03-02 09:17:32
 categories:
-  - Algorithm
-  - Number-Theoretic
+- Algorithm
+- Number-Theoretic
 tags:
-  - Algorithm
-  - GCD
-  - LCM
+- Algorithm
+- GCD
+- LCM
 toc: true
 ---
 ## 算法介绍
@@ -62,3 +62,18 @@ int lcm(int a, int b)
 }
 ```
 注意不要写成 `a * b / gcd(a, b)` 因为 `a * b` 可能溢出。
+
+## 习题
+
+### 蓝桥杯 - PREV-1 核桃的数量
+
+``` c++ main http://lx.lanqiao.cn/problem.page?gpid=T24 LanQiao
+int main()
+{
+    int a, b, c;
+    cin >> a >> b >> c;
+    int lcm_ab = lcm(a, b);
+    cout << lcm(lcm_ab, c) << endl;
+    return 0;
+}
+```
