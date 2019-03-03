@@ -23,10 +23,10 @@ $$
 ```c++
 int gcd(int a, int b)
 {
-    return b == 0 ? a : gcd(b, a%b);
+    return b == 0 ? a : gcd(b, a % b);
 }
 ```
-由于在递归调用时第二个参数的值单调递减且非负，故总能终止，且递归层数不超过 $4.785\lg{N}+1.6723, N = \max\left\{a, b\right\}$ 。
+由于在递归调用时第二个参数的值单调递减且非负，故总能终止，且递归层数不超过 $4.785\lg{N}+1.6723, N = \max \lbrace a, b \rbrace$ 。
 
 而让 `gcd` 递归层数最多的是 $\gcd(F_n, F_{n-1})$，$F_n$ 是 `Fibonacci` 数列。
 
@@ -34,8 +34,8 @@ int gcd(int a, int b)
 设
 $$
 \begin{aligned}
-a &= p_{1}^{e_{1}} p_{2}^{e_{2}} \cdots p_{r}^{e_{r}} \\
-b &= p_{1}^{f_{1}} p_{2}^{f_{2}} \cdots p_{r}^{f_{r}}
+a &= p_1^{e_1} p_2^{e_2} \cdots p_r^{e_r} \\\\
+b &= p_1^{f_1} p_2^{f_2} \cdots p_r^{f_r}
 \end{aligned}
 $$
 
@@ -43,8 +43,8 @@ $$
 
 $$
 \begin{aligned}
-\gcd(a, b) &= p_{1}^{\min \left\{e_{1}, f_{1}\right\}} p_{2}^{\min \left\{e_{2}, f_{2}\right\}} \cdots p_{r}^{\min \left\{e_{r}, f_{r}\right\}}\\
-\operatorname{lcm}(a, b) &= p_{1}^{\max \left\{e_{1}, f_{1}\right\}} p_{2}^{\max \left\{e_{2}, f_{2}\right\}} \cdots p_{r}^{\max \left\{e_{r}, f_{r}\right\}}
+\gcd(a, b) &= p_1^{\min \lbrace e_1, f_1\rbrace} p_2^{\min \lbrace e_2, f_2\rbrace} \cdots p_r^{\min \lbrace e_r, f_r\rbrace}\\\\
+\operatorname{lcm}(a, b) &= p_1^{\max \lbrace e_1, f_1\rbrace} p_2^{\max \lbrace e_2, f_2\rbrace} \cdots p_r^{\max \lbrace e_r, f_r\rbrace}
 \end{aligned}
 $$
 
