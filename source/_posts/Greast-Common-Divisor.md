@@ -9,7 +9,6 @@ tags:
   - GCD
   - LCM
 toc: true
-mathjax: true
 ---
 ## 算法介绍
 
@@ -35,21 +34,26 @@ int gcd(int a, int b)
 设
 $$
 \begin{aligned}
-a &=p_{1}^{e_{1}} p_{2}^{e_{2}} \cdots p_{r}^{e_{r}} \\
-b &=p_{1}^{f_{1}} p_{2}^{f_{2}} \cdots p_{r}^{f_{r}}
+a &= p_{1}^{e_{1}} p_{2}^{e_{2}} \cdots p_{r}^{e_{r}} \\
+b &= p_{1}^{f_{1}} p_{2}^{f_{2}} \cdots p_{r}^{f_{r}}
 \end{aligned}
 $$
+
 则
+
 $$
 \begin{aligned}
-\gcd(a, b)=p_{1}^{\min \left\{e_{1}, f_{1}\right\}} p_{2}^{\min \left\{e_{2}, f_{2}\right\}} \cdots p_{r}^{\min \left\{e_{r}, f_{r}\right\}}\\
-\operatorname{lcm}(a, b)=p_{1}^{\max \left\{e_{1}, f_{1}\right\}} p_{2}^{\max \left\{e_{2}, f_{2}\right\}} \cdots p_{r}^{\max \left\{e_{r}, f_{r}\right\}}
+\gcd(a, b) &= p_{1}^{\min \left\{e_{1}, f_{1}\right\}} p_{2}^{\min \left\{e_{2}, f_{2}\right\}} \cdots p_{r}^{\min \left\{e_{r}, f_{r}\right\}}\\
+\operatorname{lcm}(a, b) &= p_{1}^{\max \left\{e_{1}, f_{1}\right\}} p_{2}^{\max \left\{e_{2}, f_{2}\right\}} \cdots p_{r}^{\max \left\{e_{r}, f_{r}\right\}}
 \end{aligned}
 $$
+
 故
+
 $$
 \gcd(a, b) \times \operatorname{lcm}(a, b) = a \times b
 $$
+
 由此
 ```c++
 int lcm(int a, int b)
