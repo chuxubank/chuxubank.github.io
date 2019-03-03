@@ -9,7 +9,7 @@ tags:
 toc: true
 ---
 
-# 算法介绍
+## 算法介绍
 
 | 原字符串 | 转化后字符串 |
 | :------: | :----------: |
@@ -22,10 +22,9 @@ Len数组有一个性质，那就是 Len[i]-1 就是该回文子串在原字符�
 
 
 
-# Code
+## 习题
 ```c++
-LeetCode - 5 Longest Palindromic Substring
-
+// LeetCode - 5 Longest Palindromic Substring
 string longestPalindrome(string s) {
 	string t = "$#";
 	for (int i = 0; i < s.size(); ++i) {
