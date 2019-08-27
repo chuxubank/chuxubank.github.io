@@ -5,10 +5,11 @@ categories:
 - Algorithm
 - Number-Theoretic
 tags:
-- Algorithm
+- LanQiao
 - GCD
 - LCM
 toc: true
+mathjax: true
 ---
 ## 算法介绍
 
@@ -20,7 +21,7 @@ $$
 <!-- more -->
 
 它与边界条件 $\gcd(a, 0) = a$ 一起构成了
-```c++
+```c++ gcd
 int gcd(int a, int b)
 {
     return b == 0 ? a : gcd(b, a % b);
@@ -55,7 +56,7 @@ $$
 $$
 
 由此
-```c++
+```c++ lcm
 int lcm(int a, int b)
 {
     return a / gcd(a, b) * b;

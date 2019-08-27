@@ -5,7 +5,7 @@ categories:
 - Algorithm
 - String
 tags: 
-- Algorithm
+- Manacher
 toc: true
 ---
 

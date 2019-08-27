@@ -1,11 +1,10 @@
 ---
 title: Emacs Tutorial
 date: 2019-02-13 09:38:09
-tags:
-  - Emacs
-  - Spacemacs
 categories:
   - Editor
+tags:
+  - Emacs
 toc: true
 ---
 ![Spacemacs](http://spacemacs.org/img/screenshots/ss1.png)
