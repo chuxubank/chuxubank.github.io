@@ -8,7 +8,9 @@ tags:
 toc: true
 ---
 ![Spacemacs](http://spacemacs.org/img/screenshots/ss1.png)
+
 <!-- more -->
+
 # Basic
 	M	Meta (Option)
 	s	Super (Command)
