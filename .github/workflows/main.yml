@@ -7,9 +7,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
       with:
@@ -21,5 +19,12 @@ jobs:
       run: |
         npm i -g hexo-cli
         npm i
+    - name: Setup Git
+      run: |
+        git config --global user.email "help@github.com"
+        git config --global user.name "Github Actions"
     - name: Hexo Generate
-      run: hexo clean && hexo g && hexo d
+      run: hexo g
+    - name: Hexo Deploy
+      run: hexo d
+      if: success()
