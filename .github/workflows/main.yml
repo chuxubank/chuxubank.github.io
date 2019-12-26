@@ -6,7 +6,7 @@ on:
       - hexo
 
 jobs:
-  build:
+  js:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -21,10 +21,28 @@ jobs:
         npm i
     - name: Setup Git
       run: |
-        git config --global user.email "help@github.com"
+        git config --global user.email ""
         git config --global user.name "Github Actions"
     - name: Hexo Generate
       run: hexo g
     - name: Hexo Deploy
       run: hexo d
       if: success()
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Clean
+      uses: heowc/action-hexo@master
+      with:
+        args: clean
+    - name: Generate
+      uses: heowc/action-hexo@master
+      with:
+        args: generate
+    - name: Deploy
+      uses: heowc/action-hexo@master
+      env:
+        NAME: Github Actions
+      with:
+        args: deploy
