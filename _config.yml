@@ -96,5 +96,3 @@ deploy:
   repo: https://github.com/chuxubank/chuxubank.github.io.git
   branch: master
   token: $GITHUB_TOKEN
-  name: hexo
-  email: about@hexo.io

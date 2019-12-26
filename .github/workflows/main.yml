@@ -24,5 +24,7 @@ jobs:
     - name: Hexo Generate
       run: hexo g
     - name: Hexo Deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: hexo d
       if: success()
