@@ -136,3 +136,6 @@ Generally, the commands that can remove a lot of text kill the text (they are se
 	C-h v	Display the documentation of variables
 	C-h a	Command Apropos
 	C-h i	Read included Manuals (a.k.a. Info)
+    
+# Some useful toturial
+- [Emacs 编辑环境](https://www.ibm.com/developerworks/cn/education/aix/emacs1-1/index.html)
