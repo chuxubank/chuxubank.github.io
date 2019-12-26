@@ -16,6 +16,8 @@ jobs:
         ref: hexo
     - uses: actions/setup-node@v1
     - name: Install Dependencies
-      run: yarn install
-    - name: Hexo generate
+      run: |
+        yarn global add hexo-cli
+        yarn install
+    - name: Hexo Generate
       run: hexo clean && hexo g && hexo d
