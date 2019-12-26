@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
       with:
@@ -19,6 +19,7 @@ jobs:
         npm i
     - name: Setup Git
       run: |
+        git config credential.https://github.com.username chuxubank
         git config --global user.email "chuxubank@qq.com"
         git config --global user.name "chuxubank"
     - name: Hexo Generate
