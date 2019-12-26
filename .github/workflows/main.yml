@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - hexo
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: hexo
+    - uses: actions/setup-node@v1
+    - name: Install Dependencies
+      run: yarn install
+    - name: Hexo generate
+      run: hexo clean && hexo g && hexo d
