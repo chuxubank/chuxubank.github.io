@@ -97,3 +97,4 @@ deploy:
   branch: master
   token: $GITHUB_TOKEN
   name: hexo
+  email: about@hexo.io
