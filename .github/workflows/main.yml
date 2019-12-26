@@ -13,36 +13,12 @@ jobs:
       with:
         ref: hexo
     - uses: actions/setup-node@v1
-      with:
-        node-version: '13'
     - name: Install Dependencies
       run: |
         npm i -g hexo-cli
         npm i
-    - name: Setup Git
-      run: |
-        git config --global user.email ""
-        git config --global user.name "Github Actions"
     - name: Hexo Generate
       run: hexo g
     - name: Hexo Deploy
       run: hexo d
       if: success()
-
-  docker:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Clean
-      uses: heowc/action-hexo@master
-      with:
-        args: clean
-    - name: Generate
-      uses: heowc/action-hexo@master
-      with:
-        args: generate
-    - name: Deploy
-      uses: heowc/action-hexo@master
-      env:
-        NAME: Github Actions
-      with:
-        args: deploy
