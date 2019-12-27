@@ -22,17 +22,15 @@ jobs:
         git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1
     - uses: actions/setup-node@v1
     - name: Install Dependencies
-      run: |
-        npm i -g hexo-cli
-        npm i
+      run: yarn
     - name: Setup Git
       run: |
         git config --global user.email "chuxubank@qq.com"
         git config --global user.name "chuxubank"
-    - name: Hexo Generate
+    - name: Generate
       run: |
         cp source/_data/icarus.yml themes/icarus/_config.yml
-        hexo g
-    - name: Hexo Deploy
-      run: hexo d
+        yarn build
+    - name: Deploy
+      run: yarn deploy
       if: success()
