@@ -91,7 +91,8 @@ theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy: 
+deploy:
   type: git
-  repo: https://github.com/chuxubank/chuxubank.github.io.git
-  token: $GITHUB_TOKEN
+  repo:
+    url: https://github.com/chuxubank/chuxubank.github.io.git
+    token: $GITHUB_TOKEN
