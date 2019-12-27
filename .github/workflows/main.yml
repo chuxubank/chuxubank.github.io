@@ -27,11 +27,12 @@ jobs:
         npm i
     - name: Setup Git
       run: |
-        git config --global credential.https://github.com/chuxubank/chuxubank.github.io.git.username chuxubank
         git config --global user.email "chuxubank@qq.com"
         git config --global user.name "chuxubank"
     - name: Hexo Generate
-      run: hexo g
+      run: |
+        cp source/_data/icarus.yml themes/icarus/_config.yml
+        hexo g
     - name: Hexo Deploy
       run: hexo d
       if: success()
