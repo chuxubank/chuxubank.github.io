@@ -19,7 +19,7 @@
     "hexo-server": "^0.3.3"
   },
   "scripts": {
-    "build": "hexo g",
+    "build": "cp source/_data/icarus.yml themes/icarus/_config.yml && hexo g",
     "deploy": "hexo d"
   }
 }

@@ -44,9 +44,7 @@ jobs:
         git config --global user.name "chuxubank"
     
     - name: Generate
-      run: |
-        cp source/_data/icarus.yml themes/icarus/_config.yml
-        yarn build
+      run: yarn build
     
     - name: Deploy
       run: yarn deploy
