@@ -95,4 +95,4 @@ deploy:
   type: git
   repo:
     url: https://github.com/chuxubank/chuxubank.github.io.git
-    token: $GITHUB_TOKEN
+    token: $PERSONAL_TOKEN

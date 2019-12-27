@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@v2
@@ -22,7 +22,7 @@ jobs:
     - name: Setup Git
       run: |
         git config --global credential.https://github.com/chuxubank/chuxubank.github.io.git.username chuxubank
-        echo ${{ secrets.GITHUB_TOKEN }}
+        echo $PERSONAL_TOKEN
         git config --global user.email "chuxubank@qq.com"
         git config --global user.name "chuxubank"
     - name: Hexo Generate
