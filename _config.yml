@@ -94,5 +94,4 @@ theme: icarus
 deploy: 
   type: git
   repo: https://github.com/chuxubank/chuxubank.github.io.git
-  branch: master
   token: $GITHUB_TOKEN

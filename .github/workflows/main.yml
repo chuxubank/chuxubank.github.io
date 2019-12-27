@@ -7,6 +7,8 @@ on:
 
 jobs:
   build:
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@v2
@@ -19,13 +21,12 @@ jobs:
         npm i
     - name: Setup Git
       run: |
-        git config credential.https://github.com.username chuxubank
+        git config --global credential.https://github.com/chuxubank/chuxubank.github.io.git.username chuxubank
+        echo ${{ secrets.GITHUB_TOKEN }}
         git config --global user.email "chuxubank@qq.com"
         git config --global user.name "chuxubank"
     - name: Hexo Generate
       run: hexo g
     - name: Hexo Deploy
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: hexo d
       if: success()
