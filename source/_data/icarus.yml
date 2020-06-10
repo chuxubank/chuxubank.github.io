@@ -95,9 +95,9 @@ widgets:
 plugins:
   animejs: true
   gallery: true
-  outdated-browser: true
   mathjax: true
-  back-to-top: true
+  outdated_browser: true
+  back_to_top: true
 
 providers:
   cdn: jsdelivr
