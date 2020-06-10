@@ -1,6 +1,6 @@
 # https://blog.zhangruipeng.me/hexo-theme-icarus/Configuration/icarus-user-guide-configuring-the-theme/
 version: 3.0.0
-variant: cyberpunk
+variant: default
 favicon: /images/favicon.svg
 meta:
 logo:
