@@ -54,7 +54,7 @@ comment:
   shortname: chuxubank
 
 widgets:
-  - 
+  -
     type: profile
     position: left
     author: Chu Xu
@@ -74,17 +74,17 @@ widgets:
   -
     type: toc
     position: left
-  - 
+  -
     type: categories
     position: left
-  - 
+  -
+    type: tags
+    position: left
+  -
     type: recent_posts
     position: right
-  - 
+  -
     type: archives
-    position: right
-  - 
-    type: tags
     position: right
   -
     type: links
