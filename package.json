@@ -16,7 +16,12 @@
     "hexo-renderer-ejs": "latest",
     "hexo-renderer-marked": "latest",
     "hexo-renderer-stylus": "latest",
-    "hexo-server": "latest"
+    "hexo-component-inferno": "latest",
+    "hexo-renderer-inferno": "latest",
+    "hexo-server": "latest",
+    "bulma-stylus": "latest",
+    "inferno": "latest",
+    "inferno-create-element": "latest"
   },
   "scripts": {
     "build": "cp source/_data/icarus.yml themes/icarus/_config.yml && hexo g",
