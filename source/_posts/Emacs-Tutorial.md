@@ -7,7 +7,7 @@ tags:
   - Emacs
 toc: true
 ---
-![Spacemacs](http://spacemacs.org/img/screenshots/ss1.png)
+![doom-emacs](https://raw.githubusercontent.com/hlissner/doom-emacs/screenshots/main.png)
 
 <!-- more -->
 
