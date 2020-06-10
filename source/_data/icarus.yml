@@ -34,7 +34,7 @@ footer:
    
 article:
   highlight:
-    theme: atom-one-dark
+    theme: atom-one-light
     clipboard: true
     fold: unfolded
   thumbnail: false
