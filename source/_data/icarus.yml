@@ -75,19 +75,16 @@ widgets:
     type: toc
     position: left
   - 
-    type: category
-    position: left
-  - 
-    type: tagcloud
+    type: categories
     position: left
   - 
     type: recent_posts
     position: right
   - 
-    type: archive
+    type: archives
     position: right
   - 
-    type: tag
+    type: tags
     position: right
   -
     type: links
