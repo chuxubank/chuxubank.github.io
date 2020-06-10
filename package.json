@@ -19,7 +19,7 @@
     "hexo-component-inferno": "latest",
     "hexo-renderer-inferno": "latest",
     "hexo-server": "latest",
-    "bulma-stylus": "latest",
+    "bulma-stylus": "^0.8.0",
     "inferno": "latest",
     "inferno-create-element": "latest"
   },
