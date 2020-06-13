@@ -1,0 +1,8 @@
+#+title: Play Netease Music in Apple Music
+#+date: 2020-06-14T00:57:10+08:00
+#+author: chuxubank
+#+authorTwitter: chuxubank
+#+tags[]: Shortcuts Music
+#+keywords[]: Shortcuts play-musics
+#+description: A method to trans netease music to apple music
+#+showFullContent: false
