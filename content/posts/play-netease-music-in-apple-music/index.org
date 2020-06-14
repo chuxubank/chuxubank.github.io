@@ -1,10 +1,10 @@
 #+title: Play Netease Music in Apple Music
-#+date: 2020-06-14T00:57:10+08:00
-#+author: chuxubank
-#+authorTwitter: chuxubank
+#+date: 2020-06-13T00:00:00+08:00
+#+cover:
+#+categories[]: Shortcuts
 #+tags[]: shortcuts music
 #+keywords[]: Shortcuts play-musics
-#+description: A method to trans netease music to apple music
+#+description: A method to migrate from netease music to apple music
 #+isCJKLanguage: true
 #+toc: true
 
@@ -23,7 +23,7 @@
 * 截图
 #+caption: 搜索 [[https://music.163.com/#/song?id=1342950406][カワキヲアメク-美波]] 后得到的结果
 #+attr_html: :style border-radius: 8px :width 500rem
-[[kawakiwoameku.png]]
+[[file:kawakiwoameku.png]]
 
 * 下载
 [[https://www.icloud.com/shortcuts/919d030c0f9f4cd6bc8941f2648c0509][Play Netease Music in Apple Music]]
