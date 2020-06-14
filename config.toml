@@ -47,7 +47,7 @@ theme = "terminal"
   [languages.en]
     languageName = "English"
     title = "Misaka's Blog"
-    subtitle = ""
+    subtitle = "Listen to bothsides and you will be enlightened; heed only one side and you will be benighted."
     owner = "chuxubank"
     keywords = ""
     copyright = "chuxubank"

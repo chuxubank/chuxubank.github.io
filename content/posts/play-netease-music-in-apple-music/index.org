@@ -5,7 +5,6 @@
 #+tags[]: shortcuts music
 #+keywords[]: Shortcuts play-musics
 #+description: A method to trans netease music to apple music
-#+showFullContent: false
 #+isCJKLanguage: true
 #+toc: true
 
