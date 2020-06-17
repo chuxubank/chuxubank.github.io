@@ -1,0 +1,15 @@
+#+title: List Codeforces Contests
+#+date: 2018-01-15T06:55:30+08:00
+#+cover:
+#+categories[]: Shortcuts
+#+tags[]: shortcuts life
+#+keywords[]: Shortcuts Codeforces
+#+description: Add codeforces contests to iOS Calendar
+#+isCJKLanguage: true
+#+toc: true
+
+* 由来
+经常参加算法比赛的同学一定知道 [[http://codeforces.com/][Codeforces]]，然而这个比赛的时间往往不固定而且通常是在晚上深夜猝死场，为了方便查看比赛的时间和设置日程提醒，做了这个快捷指令。
+
+* 下载
+[[https://www.icloud.com/shortcuts/8733c44e99ec49fc98f33f5dc57dcaf5][List CF Contests]]
