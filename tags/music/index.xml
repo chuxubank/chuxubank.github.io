@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>music on Misaka&#39;s Blog</title>
+    <link>https://chuxubank.github.io/tags/music/</link>
+    <description>Recent content in music on Misaka&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>chuxubank</copyright>
+    <lastBuildDate>Sat, 13 Jun 2020 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://chuxubank.github.io/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Play Netease Music in Apple Music</title>
+      <link>https://chuxubank.github.io/posts/play-netease-music-in-apple-music/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://chuxubank.github.io/posts/play-netease-music-in-apple-music/</guid>
+      <description>由来 自从在网易云的歌单里灰了一大片歌，现存的很多歌曲也开始转向付费之后，我觉得是时候从网易云迁移到别的平台了，而选择 Apple Music 的原因也很简单——实</description>
+    </item>
+    
+  </channel>
+</rss>

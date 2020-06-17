@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Play Netease Music in Apple Music :: Misaka&#39;s Blog — Listen to bothsides and you will be enlightened; heed only one side and you will be benighted.</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="由来 自从在网易云的歌单里灰了一大片歌，现存的很多歌曲也开始转向付费之后，我觉得是时候从网易云迁移到别的平台了，而选择 Apple Music 的原因也很简单——实" />
+<meta name="keywords" content="Shortcuts, play-musics" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://chuxubank.github.io/posts/play-netease-music-in-apple-music/" />
+
+
+
+
+<link rel="stylesheet" href="https://chuxubank.github.io/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://chuxubank.github.io/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="https://chuxubank.github.io/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Play Netease Music in Apple Music :: Misaka&#39;s Blog">
+<meta property="og:description" content="A method to migrate from netease music to apple music" />
+<meta property="og:url" content="https://chuxubank.github.io/posts/play-netease-music-in-apple-music/" />
+<meta property="og:site_name" content="Play Netease Music in Apple Music" />
+
+  <meta property="og:image" content="https://chuxubank.github.io/">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+  <meta property="article:section" content="Shortcuts" />
+
+
+  <meta property="article:published_time" content="2020-06-13 00:00:00 &#43;0800 CST" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Misaka
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    
+
+    
+    <div class="spacer"></div>
+    <ul class="language-selector">
+      <ul class="language-selector-current">
+          <li>English ▾</li>
+      </ul>
+      <ul class="language-selector__more hidden">
+        
+      </ul>
+    </ul>
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/showcase">Showcase</a></li>
+      
+    
+    
+    <hr />
+        
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://chuxubank.github.io/posts/play-netease-music-in-apple-music/">Play Netease Music in Apple Music</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-06-13 [Updated: 2020-06-13]
+      </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://chuxubank.github.io/tags/shortcuts/">shortcuts</a>&nbsp;
+    
+    #<a href="https://chuxubank.github.io/tags/music/">music</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+    <div class="table-of-contents">
+      <h2>
+        
+          Table of Contents
+        
+      </h2>
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">由来</a>
+</li>
+<li><a href="#headline-2">流程</a>
+</li>
+<li><a href="#headline-3">截图</a>
+</li>
+<li><a href="#headline-4">下载</a>
+</li>
+</ul>
+</nav>
+    </div>
+  
+
+  <div class="post-content"><div>
+        
+<h2 id="headline-1">
+由来
+</h2>
+<p>
+自从在网易云的歌单里灰了一大片歌，现存的很多歌曲也开始转向付费之后，我觉得是时候从网易云迁移到别的平台了，而选择 Apple Music 的原因也很简单——实惠。
+</p>
+<p>
+确定了平台，如何迁移歌单就是一项技术活了，虽然可以利用 <a href="https://www.tunemymusic.com/zh-cn/">TunemyMusic</a> 和网易云的 API 批量将歌单导出，但是在网易云单独听到一首付费的歌并且想快速导入后继续聆听完整版本时，这种方法就显得不是很方便了。
+为此，利用网易云的 API 和 iOS 的快捷指令完成单首歌曲的信息提取，查询，播放，入库便似乎是唯一的方式了。
+</p>
+<h2 id="headline-2">
+流程
+</h2>
+<ol>
+<li>
+<p>
+在网易云音乐中复制歌曲链接
+</p>
+</li>
+<li>
+<p>
+呼出 Widgets ，点击此 Workflow
+</p>
+</li>
+<li>
+<p>
+在提示菜单中选择正确的歌曲（可以看到专辑封面），自动播放该曲目
+</p>
+</li>
+<li>
+<p>
+选择是否加入音乐库
+</p>
+</li>
+</ol>
+<h2 id="headline-3">
+截图
+</h2>
+<figure>
+<img src="kawakiwoameku.png" alt="kawakiwoameku.png" title="kawakiwoameku.png" style="border-radius: 8px" width="500rem"/>
+<figcaption>
+搜索 <a href="https://music.163.com/#/song?id=1342950406">カワキヲアメク-美波</a> 后得到的结果
+</figcaption>
+</figure>
+<h2 id="headline-4">
+下载
+</h2>
+<p>
+<a href="https://www.icloud.com/shortcuts/919d030c0f9f4cd6bc8941f2648c0509">Play Netease Music in Apple Music</a>
+</p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="https://chuxubank.github.io/posts/list-codeforces-contests/">
+                <span class="button__text">List Codeforces Contests</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>chuxubank</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://chuxubank.github.io/assets/main.js"></script>
+<script src="https://chuxubank.github.io/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

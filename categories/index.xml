@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Misaka&#39;s Blog</title>
+    <link>https://chuxubank.github.io/categories/</link>
+    <description>Recent content in Categories on Misaka&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>chuxubank</copyright>
+    <lastBuildDate>Sat, 13 Jun 2020 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://chuxubank.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shortcuts</title>
+      <link>https://chuxubank.github.io/categories/shortcuts/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://chuxubank.github.io/categories/shortcuts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
