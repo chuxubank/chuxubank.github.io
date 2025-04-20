@@ -10,6 +10,10 @@ caches:
   images:
     dir: :cacheDir/images
 
+markup:
+  highlight:
+    noClasses: false
+
 params:
   contentTypeName: posts
   themeColor: orange
@@ -17,8 +21,11 @@ params:
   showLanguageSelector: true
   fullWidthTheme: false
   centerTheme: true
+  autoCover: true
   showLastUpdated: true
   enableGitInfo: true
+  readingTime: true
+  Toc: true
   twitter:
     creator: chuxubank
     site: ""
@@ -49,4 +56,28 @@ languages:
           url: /about
         - identifier: showcase
           name: Showcase
+          url: /showcase
+  zh:
+    languageName: Chinese
+    title: 旭艺阁
+    subtitle: 兼听则明，偏信则暗
+    owner: 旭
+    keywords: ""
+    copyright: chuxubank
+    menuMore: 更多
+    readMore: 阅读更多
+    readOtherPosts: 阅读其他
+    missingContentMessage: 荒芜之地...
+    missingBackButtonLabel: 回家
+    params:
+      logo:
+        logoText: Misaka
+        logoHomeLink: /
+    menu:
+      main:
+        - identifier: about
+          name: 关于
+          url: /about
+        - identifier: showcase
+          name: 展示
           url: /showcase
