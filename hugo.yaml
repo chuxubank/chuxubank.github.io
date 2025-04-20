@@ -1,0 +1,47 @@
+baseURL: https://chuxubank.github.io/
+languageCode: en-us
+title: Misaka's Blog
+theme: terminal
+paginate: 5
+caches:
+  images:
+    dir: :cacheDir/images
+params:
+  contentTypeName: posts
+  themeColor: orange
+  showMenuItems: 2
+  showLanguageSelector: true
+  fullWidthTheme: false
+  centerTheme: true
+  showLastUpdated: true
+  enableGitInfo: true
+  twitter:
+    creator: chuxubank
+    site: ""
+languages:
+  en:
+    languageName: English
+    title: Misaka's Blog
+    subtitle:
+      Listen to bothsides and you will be enlightened; heed only one side
+      and you will be benighted.
+    owner: chuxubank
+    keywords: ""
+    copyright: chuxubank
+    menuMore: Show more
+    readMore: Read more
+    readOtherPosts: Read other posts
+    missingContentMessage: Page not found...
+    missingBackButtonLabel: Back to home page
+    params:
+      logo:
+        logoText: Misaka
+        logoHomeLink: /
+    menu:
+      main:
+        - identifier: about
+          name: About
+          url: /about
+        - identifier: showcase
+          name: Showcase
+          url: /showcase
