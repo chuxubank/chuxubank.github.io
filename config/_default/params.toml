@@ -1,0 +1,15 @@
+contentTypeName = "posts"
+themeColor = "orange"
+showMenuItems = 2
+showLanguageSelector = true
+fullWidthTheme = false
+centerTheme = true
+autoCover = true
+showLastUpdated = true
+enableGitInfo = true
+readingTime = true
+Toc = true
+
+[twitter]
+creator = "chuxubank"
+site = ""

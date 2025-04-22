@@ -1,0 +1,17 @@
+subtitle = "兼听则明，偏信则暗"
+owner = "旭"
+keywords = ""
+copyright = "旭"
+menuMore = "更多"
+readMore = "阅读更多"
+readOtherPosts = "阅读其他"
+newerPosts = "新"
+olderPosts = "旧"
+missingContentMessage = "无序之处..."
+missingBackButtonLabel = "回家"
+minuteReadingTime = "分钟"
+words = "字"
+
+[logo]
+logoText = "初序"
+logoHomeLink = "/"
