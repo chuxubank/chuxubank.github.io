@@ -11,7 +11,13 @@ url = "/zh/showcase"
 weight = "20"
 
 [[main]]
+identifier = "rss"
+name = "订阅"
+url = "/zh/index.xml"
+weight = "30"
+
+[[main]]
 identifier = "search"
 name = "搜索 (^K)"
 url = ""
-weight = "30"
+weight = "40"
