@@ -1,14 +1,17 @@
 [[main]]
 identifier = "about"
 name = "About"
-url = "/about"
+url = "/en/about"
+weight = "10"
 
 [[main]]
 identifier = "showcase"
 name = "Showcase"
-url = "/showcase"
+url = "/en/showcase"
+weight = "20"
 
 [[main]]
 identifier = "search"
 name = "Search (^K)"
 url = ""
+weight = "30"

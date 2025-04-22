@@ -1,14 +1,17 @@
 [[main]]
 identifier = "about"
 name = "关于"
-url = "/about"
+url = "/zh/about"
+weight = "10"
 
 [[main]]
 identifier = "showcase"
 name = "展示"
-url = "/showcase"
+url = "/zh/showcase"
+weight = "20"
 
 [[main]]
 identifier = "search"
 name = "搜索 (^K)"
 url = ""
+weight = "30"
