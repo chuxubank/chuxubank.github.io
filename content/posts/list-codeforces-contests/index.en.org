@@ -1,0 +1,16 @@
+#+title: List Codeforces Contests
+#+date: 2018-01-15T06:55:30+08:00
+#+cover:
+#+categories[]: Shortcuts
+#+tags[]: shortcuts life
+#+keywords[]: Shortcuts Codeforces
+#+description: Add Codeforces contests to iOS Calendar in favor of Shortcuts
+#+isCJKLanguage: false
+
+* Background
+If you frequently participate in algorithm competitions, you're probably familiar with [[http://codeforces.com/][Codeforces]].
+However, the contest times are often irregular and usually scheduled late at night — a real "sudden death" session.
+To make it easier to check contest schedules and set calendar reminders, I created this shortcut.
+
+* Download
+[[https://www.icloud.com/shortcuts/8733c44e99ec49fc98f33f5dc57dcaf5][List CF Contests]]
