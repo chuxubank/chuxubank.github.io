@@ -1,5 +1,6 @@
 baseURL = "https://chuxubank.github.io/"
 defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = true
 timeZone = "Asia/Shanghai"
 
 [pagination]
