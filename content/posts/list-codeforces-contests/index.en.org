@@ -5,7 +5,6 @@
 #+tags[]: shortcuts life
 #+keywords[]: Shortcuts Codeforces
 #+description: Add Codeforces contests to iOS Calendar in favor of Shortcuts
-#+isCJKLanguage: false
 
 * Background
 If you frequently participate in algorithm competitions, you're probably familiar with [[http://codeforces.com/][Codeforces]].

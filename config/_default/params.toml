@@ -6,7 +6,6 @@ fullWidthTheme = false
 centerTheme = true
 autoCover = true
 showLastUpdated = true
-enableGitInfo = true
 readingTime = true
 Toc = true
 
