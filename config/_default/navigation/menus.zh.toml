@@ -7,3 +7,8 @@ url = "/about"
 identifier = "showcase"
 name = "展示"
 url = "/showcase"
+
+[[main]]
+identifier = "search"
+name = "搜索 (^K)"
+url = ""

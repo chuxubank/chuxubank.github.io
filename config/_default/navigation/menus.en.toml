@@ -7,3 +7,8 @@ url = "/about"
 identifier = "showcase"
 name = "Showcase"
 url = "/showcase"
+
+[[main]]
+identifier = "search"
+name = "Search (^K)"
+url = ""

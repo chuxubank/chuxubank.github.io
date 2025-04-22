@@ -1,3 +1,28 @@
 {{ if or .Params.math .Site.Params.math }}
 {{ partial "math.html" . }}
 {{ end }}
+
+{{ partial "search/assets/js" . }}
+{{ partial "search/assets/css" . }}
+
+<style>
+:root {
+  --search-primary: #ffb08c;
+  --search-container-bg: #1d1d1d;
+  --search-bg: #2a2a2a;
+  --search-color: #f1f1f1;
+  --search-color-secondary: #aaaaaa;
+
+  --search-result-bg: #2e2e2e;
+  --search-result-bg-active: #3a3a3a;
+  --search-result-color: #f5f5f5;
+  --search-result-color-active: #ffffff;
+  --search-result-color-secondary: #bbbbbb;
+  --search-result-color-secondary-active: #dddddd;
+
+  --search-result-highlight-bg: #ffb08c22;
+  --search-result-highlight-color: #ff9e7c;
+
+  --search-border-color: #f78c6c;
+}
+</style>

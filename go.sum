@@ -1,2 +1,6 @@
+github.com/hugomods/search v0.20.0 h1:zko3/0UqsB5SiW30eK0KgDfs4Eczeis25FFLDPrjARA=
+github.com/hugomods/search v0.20.0/go.mod h1:xPnDGjP/HCdEWJrJBwwdI2mEtdxFxp+wHBwSl/r2m00=
+github.com/hugomods/search-index v0.1.2 h1:ZYMT7YMhWxH5/vomtxZtJUgdu9/QAQbNnKRLi2CCXvA=
+github.com/hugomods/search-index v0.1.2/go.mod h1:2owtATJ1XxWAvK/trnNoUC1EoBimAtRYVa7F+JO/s9c=
 github.com/panr/hugo-theme-terminal/v4 v4.2.1 h1:HGQdOolUNFYMbHrguEbkGU8HWKv4qSAV/n1egSGSnvs=
 github.com/panr/hugo-theme-terminal/v4 v4.2.1/go.mod h1:W0sFodm5ipL5gjRqOFjg4zD+euoQ8hCtyDDtqSpihxM=
