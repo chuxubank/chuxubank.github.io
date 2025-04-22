@@ -1,10 +1,10 @@
-#+title: Play Netease Music in Apple Music
+#+title: 使用 Apple Music 继续播放网易云音乐
 #+date: 2020-06-13T00:00:00+08:00
 #+cover:
-#+categories[]: Shortcuts
-#+tags[]: shortcuts music
-#+keywords[]: Shortcuts play-musics
-#+description: A method to migrate from netease music to apple music
+#+categories[]: 快捷指令
+#+tags[]: 快捷指令 音乐
+#+keywords[]: 快捷指令 网易云音乐 "Apple Music"
+#+description: 一个将音乐从网易云迁移到 Apple Music 的方法
 #+isCJKLanguage: true
 #+toc: true
 
