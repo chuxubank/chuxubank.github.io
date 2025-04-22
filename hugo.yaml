@@ -1,6 +1,7 @@
 baseURL: https://chuxubank.github.io/
-languageCode: en-us
+defaultContentLanguage: zh
 title: Misaka's Blog
+timeZone: Asia/Shanghai
 
 pagination:
   pagerSize: 5
@@ -36,21 +37,23 @@ params:
 languages:
   en:
     languageName: English
-    title: Misaka's Blog
-    subtitle:
-      Listen to bothsides and you will be enlightened; heed only one side
-      and you will be benighted.
-    owner: chuxubank
-    keywords: ""
-    copyright: chuxubank
-    menuMore: Show more
-    readMore: Read more
-    readOtherPosts: Read other posts
-    missingContentMessage: Page not found...
-    missingBackButtonLabel: Back to home page
+    title: InitSeq
     params:
+      subtitle: Listen to bothsides and you will be enlightened; heed only one side and you will be benighted.
+      owner: X.Chuu
+      keywords: ""
+      copyright: chuxubank
+      menuMore: Show more
+      readMore: Read more
+      readOtherPosts: Read other posts
+      newerPosts: Newer posts
+      olderPosts: Older posts
+      missingContentMessage: Page not found...
+      missingBackButtonLabel: Back to home page
+      minuteReadingTime: min read
+      words: words
       logo:
-        logoText: Misaka
+        logoText: InitSeq
         logoHomeLink: /
     menu:
       main:
@@ -61,20 +64,24 @@ languages:
           name: Showcase
           url: /showcase
   zh:
-    languageName: Chinese
-    title: 旭艺阁
-    subtitle: 兼听则明，偏信则暗
-    owner: 旭
-    keywords: ""
-    copyright: chuxubank
-    menuMore: 更多
-    readMore: 阅读更多
-    readOtherPosts: 阅读其他
-    missingContentMessage: 荒芜之地...
-    missingBackButtonLabel: 回家
+    languageName: 中文
+    title: 初序
     params:
+      subtitle: 兼听则明，偏信则暗
+      owner: 旭
+      keywords: ""
+      copyright: 旭
+      menuMore: 更多
+      readMore: 阅读更多
+      readOtherPosts: 阅读其他
+      newerPosts: 新
+      olderPosts: 旧
+      missingContentMessage: 无序之处...
+      missingBackButtonLabel: 回家
+      minuteReadingTime: 分钟
+      words: 字
       logo:
-        logoText: Misaka
+        logoText: 初序
         logoHomeLink: /
     menu:
       main:
