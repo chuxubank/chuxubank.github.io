@@ -1,5 +1,4 @@
 [search]
-min_match_char_length = 3
 ignore_location = true
 threshold = 0
 distance = 0
