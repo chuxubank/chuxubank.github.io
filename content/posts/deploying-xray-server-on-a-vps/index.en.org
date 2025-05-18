@@ -1,0 +1,162 @@
+#+title: Deploying Xray Server on a VPS
+#+date: 2025-05-17T13:09:55+08:00
+#+cover:
+#+categories[]: Proxy
+#+tags[]: xray server vps ansible
+#+keywords[]: Xray
+#+description: How to set up an Xray server for Internet freedom
+
+* Introduction
+In an era where internet access is increasingly filtered or restricted, having your own secure tunnel to the open web can be a powerful tool.
+
+This guide will walk you through setting up an Xray server — a modern, flexible proxy framework — to help you regain private, uncensored access to the global internet.
+Whether you’re trying to overcome national firewalls or simply want full control over your browsing privacy, this solution can be a reliable alternative to commercial VPNs.
+
+* What Is Xray
+[[https://github.com/xtls/xray-core][Xray]] is a next-generation proxy platform designed for building secure and flexible internet tunnels.
+It is based on [[https://github.com/v2fly/v2ray-core][V2Ray]], a widely used open-source project, but includes additional features, better performance, and ongoing development by a more active community.
+Xray supports many protocols, such like VMess, VLESS, Trojan, etc. You can always find the one you like.
+
+* Prerequisites
+- A VPS outside mainland China
+- Optional: A domain name (with DNS access)
+- Basic Linux knowledge
+- SSH access to your server
+
+* Server Setup
+There's many ways to install Xray on VPS, list on the [[https://xtls.github.io/en/document/install.html#install-on-linux][Project X - Download and install - Install on Linux]].
+I recommend to use official docker image [[https://ghcr.io/xtls/xray-core][xray-core]] to install the Xray on VPS, it's easy to combine a docker services with others such like [[https://caddyserver.com][caddy]] via docker compose as well as setup with Ansible (I will write another post to describe it).
+
+So for now, you can just write a simple docker compose file ~compose.yml~:
+
+#+begin_src yaml
+  services:
+    xray:
+      container_name: xray
+      image: ghcr.io/xtls/xray-core
+      restart: always
+      ports:
+        - "${REALITY_PORT}:${REALITY_PORT}"
+      extra_hosts:
+        - "host.docker.internal:host-gateway"
+      volumes:
+        - ./config.json:/etc/xray/config.json
+        - caddy_data:/data
+#+end_src
+
+For ~config.json~, you can take a look at official examples: [[https://github.com/XTLS/Xray-examples][Xray-examples]] (Yes, the project is that much well documented).
+But for now, we can just write a very simple one (use VLESS-TCP-XTLS-Vision-REALITY as base):
+
+#+begin_src json
+  {
+    "log": {
+      "loglevel": "debug"
+    },
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "domain": ["geosite:geolocation-!cn"],
+          "outboundTag": "direct",
+          "ruleTag": "Known Site"
+        },
+        {
+          "ip": ["geoip:cn", "geoip:private"],
+          "outboundTag": "blocked",
+          "ruleTag": "Private/CN IP"
+        }
+      ]
+    },
+    "inbounds": [
+      {
+        "port": ${REALITY_PORT},
+        "protocol": "vless",
+        "settings": {
+          "clients": [
+            {
+              "id": "", // run `xray uuid` to generate
+              "flow": "xtls-rprx-vision"
+            }
+          ],
+          "decryption": "none"
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "target": "", // A website that support TLS1.3 and h2. You can also use `1.1.1.1:443` as target. This filed was called `target` in old versions.
+            "serverNames": [
+              ""    // A server name in the cert of dest site. If you use `1.1.1.1:443` as dest, then you can leave `serverNames` empty, it is a possible ways to bypass Iran's internet speed restrictions.
+            ],
+            "privateKey": "", // run `xray x25519` to generate. Public and private keys need to be corresponding.
+            "shortIds": [// Required, list of shortIds available to clients, can be used to distinguish different clients
+              "", // If this item exists, client shortId can be empty
+              "0123456789abcdef" // 0 to f, length is a multiple of 2, maximum length is 16
+            ]
+          }
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ],
+          "routeOnly": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "blocked"
+      }
+    ]
+  }
+#+end_src
+
+You can see there's some difference with the official one, which block the traffic back to CN, this is a trick to prevent the IP get banned.
+
+You also need to install a ~xray~ binary on your computer to run the command to generate the public and private keys, you may also use it to generate a uuid for client identification.
+
+Here are some examples for the commends
+
+#+begin_src sh
+  xray x25519
+#+end_src
+
+#+RESULTS:
+| Private | key: | UM5Gl3GkcDfbaVjAYM1vsaWkw5qns1-pi-PNfojdvEg |
+| Public  | key: | qWyB3TJzKNpWy9TWFt8COpc5qruIlfiM0sC5zQwFHQs |
+
+#+begin_src sh
+  xray uuid
+#+end_src
+
+#+RESULTS:
+: 65cf2486-44dc-4875-9188-da4274f3a9d7
+
+Remember to replace the ~${REALITY_PORT}~ with your own port. Actually I do not recommend the commonly used 443 for https, you can choose a not that commonly used one.
+
+After all done, you can run the docker startup command on VPS.
+
+#+begin_src sh
+  docker compose up -d
+#+end_src
+
+* Client Setup
+Here are some commonly used clients, such like [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowrocket]], [[https://github.com/2dust/v2rayN][v2rayN]], etc.
+Most of them support a VLESS share link standard, which is defined on [[https://github.com/XTLS/Xray-core/discussions/716][VMessAEAD / VLESS 分享链接标准提案]], so you can easily combine one with your server config and import it to your client.
+Here's an example:
+#+begin_example
+  vless://${ CLIENT_ID }@${ ADDRESS }:${ REALITY_PORT }?type=tcp&security=reality&flow=xtls-rprx-vision&pbk=${ REALITY_PUBLIC_KEY }&sni=${ REALITY_TARGET }&sid=${ REALITY_SHORT_ID }#${ DESCRIPTIVE_TEXT }
+#+end_example
+The ~ADREESS~ here should be the public IP of your VPS.
+The ~REALITY_PUBLIC_KEY~ should be the content where ~xray x25519~ generated.
+The ~DESCRIPTIVE_TEXT~ can be a simple tag to identify your service you just setup.
+
+You should now test the connection with a real URL request, try not to use TCP to test the delay, it can be a sign to get IP banned.
